@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+
+</head>
+<body>
+	
+<textarea id='in' style="width: 400px;height: 800px;"></textarea>
+<button onclick="test1();">change</button>
+<textarea id='out' style="width: 400px;height: 800px;"></textarea>
+<script type="text/javascript">
+	function test1(){
+		var in_ = document.getElementById('in').value;
+		//console.log(in_);
+		var out = in_.replace(/[\r\n]/g,' ');
+		document.getElementById('out').value = out;
+	}
+
+</script>
+</body>
+</html>
